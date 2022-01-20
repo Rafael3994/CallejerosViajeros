@@ -1,0 +1,161 @@
+.btn-toggle-sidebar{
+    position: absolute;
+    z-index: 5;
+    margin-top: 350px;
+    padding: 50px;
+}
+
+.borderAssets{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    max-width: 250px;
+    left: 0px;
+    position: relative;
+}
+
+
+.pulpito{
+    width: 100px;
+    left: 155px;
+    position: absolute;
+}
+
+.borderText{
+    font-size: 50px;
+    color: #30323b;
+    cursor: default;
+    font-variant: small-caps;
+    position: absolute;
+    left: 160px;
+    height: max-content;
+    top: 130px;
+}
+
+.fade-out {
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form{
+    margin: auto auto;
+    width: 90%;
+    z-index: 99;
+}
+
+.login{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.checkEyePass{
+    cursor: pointer;
+    max-height: fit-content;
+}
+
+#sidebar.active {
+    /*
+    El margen negativo tiene que ser proporcional a los px del borde
+    */
+    margin-left: -160px;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 600px;
+    background: #04aef0;
+    color: #fff;
+    transition: all 0.4s;
+    border-right: 100px solid #04aef0;
+    border-radius: 0px 75px 100px 0px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #30323b;
+}
+
+#sidebar ul.components {
+    padding-bottom: 20px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: rgb(0, 0, 0);
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+.botones{
+    margin-left: 5%;
+}
+
+.botonesbar{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.botonesUsuarios{
+    margin-left: 150%;
+}

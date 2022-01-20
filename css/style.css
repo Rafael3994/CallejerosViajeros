@@ -1,0 +1,243 @@
+*{
+    font-family: Nunito;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    font-weight: initial;
+    color: #30323b;
+}
+
+.logo{
+    width: 100px;
+    border: 1px solid red;
+}
+
+#content{
+    padding: 100px;
+    min-width: 100vh;
+    padding-bottom: 0px;
+}
+
+/**********************************/
+
+.container {
+    width: 100%;
+    height: 200px;
+}
+
+.desplegableBuscador{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.containerImage{
+    min-width: 100%;
+    min-height: 500px;
+}
+
+.banner {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    transition: .5s ease;
+    object-fit: cover;
+    object-position: 0% 70%
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+}
+
+.header:hover .banner {
+    opacity: 0.3;
+}
+
+.header:hover .middle {
+    opacity: 1;
+}
+
+.textContainer{
+    color: white;
+    padding: 16px 32px;
+    position: absolute;
+    margin-top: -350px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 85, 155, 0.61);
+}
+
+.text{
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+/*///////////////////////////////////////////////////////////////
+//       CLASES PARA LAS EXPERIENCIAS EN FORMA DE TARJETA      //
+///////////////////////////////////////////////////////////////*/
+
+.card-experiencia {
+    -webkit-transform:scale(0.8); /*Webkit: Scale down image to 0.8x original size*/
+    -moz-transform:scale(0.8); /*Mozilla scale version*/
+    -o-transform:scale(0.8); /*Opera scale version*/
+    -webkit-transition-duration: 0.5s; /*Webkit: Animation duration*/
+    -moz-transition-duration: 0.5s; /*Mozilla duration version*/
+    -o-transition-duration: 0.5s; /*Opera duration version*/
+
+    height: 100%;
+    padding-right:0px;
+    padding-left:0px;
+    cursor: pointer;
+}
+
+.card-experiencia:hover{
+    -webkit-transform:scale(1); /*Webkit: Scale up image to 1.2x original size*/
+    -moz-transform:scale(1); /*Mozilla scale version*/
+    -o-transform:scale(1); /*Opera scale version*/
+    border-radius: 5px;
+    box-shadow:0px 0px 30px black; /*CSS3 shadow: 30px blurred shadow all around image*/
+    -webkit-box-shadow:0px 0px 30px black; /*Safari shadow version*/
+    -moz-box-shadow:0px 0px 30px black; /*Mozilla shadow version*/
+}
+        
+.card-experiencia:active {
+    box-shadow: 0 0px #666;
+    transform: translateY(10px);
+}
+
+.modal-content{
+    position: relative;
+}
+
+.modal-img{
+    width: 100%;  
+    height: auto;
+    border-radius: 5%;
+}
+
+/*
+Esta clase ha sido creada para eliminar el mx-width que boostrap añade automaticamente a los popover
+De esta manera el popover será del mismo tamaño que se especifique en el mapa
+ver moduleExperiencia:99
+*/
+.btn-popover .popover{
+    max-width:none;
+}
+
+.saveTextBtn{
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 50px;
+    padding: 0px;
+    background-color: limegreen;
+}
+
+.formatTextBtn{
+    margin-top: 10px;
+    width: 30px;
+    padding: 0px;
+}
+
+.formatTextBtn:hover{
+    color: dimgrey;
+}
+
+.formatTextBtn-focus {
+    background-color: powderblue;
+}
+
+.box_likes-dislikes{
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+.modal-footer{
+    justify-content: space-between;
+}
+
+/*
+/////////////////////////////////////////////////////////////////
+//                         FOOTER                              //
+/////////////////////////////////////////////////////////////////
+*/
+.footer {
+    max-width: 95%;
+}
+
+.divisor {
+    background-color: #04aef0;
+    color: #000f14;
+    font: normal normal normal 14px/14px Nunito;
+    letter-spacing: 1.4px;
+    margin-top: 50px;
+    max-width: 100%;
+    margin-left: 0px;
+}
+.footer-ul {
+    font: normal normal normal 14px/22px Nunito;
+    letter-spacing: 0px;
+    color: #000f14;
+}
+
+.footer-links {
+    font: normal normal normal 14px/24px Nunito;
+    letter-spacing: 0px;
+    color: #888888;
+}
+
+.footer-media-title {
+    font: normal normal normal 14px/22px Nunito;
+    letter-spacing: 1.4px;
+    color: #888888;
+}
+
+.footer-media-text {
+    font: normal normal normal 19px/29px Nunito;
+    letter-spacing: 0px;
+    color: #000f14;
+}
+
+.footer-bottom-grail{
+    font: normal normal normal 22px/20px Times New Roman;
+    letter-spacing: 7.7px;
+}
+
+.footer-bottom-copyright{
+    font: normal normal normal 14px/20px Nunito;
+    letter-spacing: 1.74px;
+    color: #000F14;
+}
+
+.footer-bottom-text{
+    text-align: right;
+    font: normal normal normal 28px/38px Times New Roman;
+    letter-spacing: 2.8px;
+    color: #D9D9D9;
+}
+
+@media screen and (max-width: 600px) {
+    .hide {
+        display: none;
+    }
+}
+.linkFooter:visited {
+    color: black;
+}
